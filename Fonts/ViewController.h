@@ -7,8 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <CarPlay/CarPlay.h>
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController <UITableViewDataSource>
+
+@property (nonatomic, weak)IBOutlet UITableView* tableView;
 
 
 @end
